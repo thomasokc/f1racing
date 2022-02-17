@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<title>F1 Racing</title>
+</head>
+<body>
+    <h1 class="text-center">F1 Racing</h1>
+    <h5 class="text-center">Available Seasons: 2020 | Available Rounds: 1</h3>
+    <div class = "container">
+        <div class="row">
+            <div class="col-12 col-md-12 text-center">
+                <form name="testData" id="testDataForm">
+                    <label for="season">Season</label>
+                    <input type="text" name="season" id="season">
+                    <label for="round">Round</label>
+                    <input type="text" name="round" id="round">
+                    <button type ="submit" id="submit" class="btn-primary mx-3" onclick='loadData()'>Get Results</button>
+                </form>
+                <section class="list-group racer-list"></section>
+                </section>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
